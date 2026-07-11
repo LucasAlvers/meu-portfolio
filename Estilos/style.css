@@ -1,2 +1,121 @@
 @charset "UTF-8";
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+:root {
+  --cor-bg-principal: #0b0e14;
+  --cor-bg-secundario: #12151d;
+  --cor-accent: #3fc7d6;
+  --cor-texto-principal: #e8e8ef;
+  --cor-texto-secundario: #9799ab;
+  /* ... todas as outras variáveis */
+}
+
+#header-container{
+    background-color: var(--cor-bg-secundario);
+    padding: 15px;
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#header-container .titulo{
+    color: var(--cor-texto-principal);
+    margin: auto;
+    font-size: 1.1em;
+}
+
+.menu{
+    display: flex;
+
+    gap: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    margin: auto;
+}
+
+.menu a{
+    text-decoration: none;
+    color: var(--cor-texto-secundario);
+}
+
+
+.conteudo-primario{
+    padding: 24px 16px;
+    background-color: var(--cor-bg-principal);
+    text-align: center;
+}
+
+.conteudo-primario .main-titulo{
+    margin-bottom: 15px;
+    color: var(--cor-texto-principal);
+}
+
+.conteudo-primario .main-paragrafo{
+    margin-bottom: 20px;
+    color: var(--cor-accent);
+}
+
+.conteudo-primario .main-paragrafo2{
+    margin-bottom: 20px;
+    color: var(--cor-texto-secundario);
+}
+
+.conteudo-primario .main-butao{
+    padding: 8px;
+    border-radius: 6px;
+    background-color: var(--cor-bg-principal);
+    color: var(--cor-texto-principal);
+    border: 1px solid var(--cor-texto-principal);
+}
+
+.conteudo-primario .main-butao:hover{
+    cursor: pointer;
+    background-color: var(--cor-texto-principal);
+    color: var(--cor-bg-principal);
+}
+
+.conteudo-secundario{
+    padding: 24px 16px;
+    background-color: var(--cor-bg-principal);
+    color: var(--cor-texto-principal);
+    text-align: center;
+}
+
+
+
+
+
+.conteudo-terciario{
+    padding: 24px 16px;
+    background-color: var(--cor-bg-principal);
+    color: var(--cor-texto-principal);
+    text-align: center;
+}
+
+
+.contato{
+    padding: 24px 16px;
+    background-color: var(--cor-bg-principal);
+    color: var(--cor-texto-principal);
+    text-align: center;
+}
+
+.contato a{
+    text-decoration: none;
+    color: var(--cor-accent);
+}
+
+.rodape{
+    padding: 24px 16px;
+    background-color: var(--cor-bg-principal);
+    color: var(--cor-texto-principal);
+    text-align: center;
+}
