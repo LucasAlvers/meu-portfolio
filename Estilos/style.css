@@ -23,27 +23,38 @@
 
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
+    
 }
 
 #header-container .titulo{
     color: var(--cor-texto-principal);
-    margin: auto;
     font-size: 1.1em;
 }
 
 .menu{
-    display: flex;
+    
 
-    gap: 15px;
+   
     padding: 10px;
     border-radius: 5px;
-    margin: auto;
+  
 }
 
 .menu a{
     text-decoration: none;
     color: var(--cor-texto-secundario);
+}
+.menu a:hover{
+    cursor: pointer;
+    color: var(--cor-texto-principal);
+}
+
+#main-container{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: auto 97% auto;
+    background-color: var(--cor-bg-principal);
+
 }
 
 
@@ -51,6 +62,8 @@
     padding: 24px 16px;
     background-color: var(--cor-bg-principal);
     text-align: center;
+
+    grid-column: 2;
 }
 
 .conteudo-primario .main-titulo{
@@ -73,7 +86,8 @@
     border-radius: 6px;
     background-color: var(--cor-bg-principal);
     color: var(--cor-texto-principal);
-    border: 1px solid var(--cor-texto-principal);
+    font-weight: bold;
+    border: 1px solid var(--cor-texto-secundario);
 }
 
 .conteudo-primario .main-butao:hover{
@@ -82,11 +96,15 @@
     color: var(--cor-bg-principal);
 }
 
+
+
 .conteudo-secundario{
     padding: 24px 16px;
     background-color: var(--cor-bg-principal);
     color: var(--cor-texto-principal);
     text-align: center;
+
+    grid-column: 2;
 }
 
 
@@ -98,6 +116,8 @@
     background-color: var(--cor-bg-principal);
     color: var(--cor-texto-principal);
     text-align: center;
+
+    grid-column: 2;
 }
 
 
@@ -106,6 +126,8 @@
     background-color: var(--cor-bg-principal);
     color: var(--cor-texto-principal);
     text-align: center;
+
+    grid-column: 2;
 }
 
 .contato a{
@@ -118,4 +140,6 @@
     background-color: var(--cor-bg-principal);
     color: var(--cor-texto-principal);
     text-align: center;
+    
+    grid-column: 2;
 }
